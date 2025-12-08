@@ -1,0 +1,80 @@
+@import "tailwindcss";
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.bg-gray {
+  background-color: #f4f5f7 !important;
+}
+.text-secondary {
+  color: #2d7da0;
+}
+.hb-h-350 {
+  height: 350px;
+   @media screen and (max-width: 1200px) {
+    height: 250px;
+  }
+   @media screen and (max-width: 900px) {
+    height: 250px;
+  }
+  @media screen and (max-width: 500px) {
+    height: 250px;
+  }
+}
+.hb-bg-brand {
+  background-color: #f79a06;
+}
+.hb-border-white:hover {
+  background-color: #f79a06;
+}
+.hb-bg-brand:hover {
+  background-color: #2d7da0;
+}
+
+.hb-bg-primary {
+  background-color: #2d7da0;
+}
+.hb-bg-primary:hover {
+  background-color: rgba(50, 103, 125, 1);
+}
+.hb-bg-primary-hover:hover {
+  background-color: #2d7da0;
+  color: #fff;
+}
+.hover\:bg-primary-500:hover {
+  background-color: #59a4b0;
+  color: #fff;
+}
+.hb-border-primary {
+  border-color: #2d7da0;
+}
+.hb-border-primary-focus:focus {
+  box-shadow: 1px 1px 1px 1px rgba(50, 103, 125, 1);
+  outline: 1px solid rgba(50, 103, 125, 1);
+}
+.hb-contact-form {
+  input,
+  textarea {
+    &::focus-visible {
+      outline: 1px solid #2d7da0;
+      border-color: #2d7da0;
+    }
+  }
+}
+
+.hover\:bg-orange:hover {
+  background-color: #f79a06;
+}
+.border-orange {
+  border-color: #f79a06;
+}
+.hover\:border-orange:hover {
+  border-color: #f79a06;
+}
+.hover\:text-white:hover {
+  color: #fff;
+}
+.hb-bg-brand-hover:hover {
+  background-color: #f79a06;
+}

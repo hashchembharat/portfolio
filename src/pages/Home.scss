@@ -1,0 +1,11 @@
+#topProductsSection {
+  background-image: url("../assets/img/home_banner_section_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -47px;
+}
+@media (max-width: 768px) {
+    #topProductsSection .justify-start{
+        justify-content: center;
+    }
+}

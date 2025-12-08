@@ -1,0 +1,98 @@
+[class*="contactus-section-"] {
+  background-color: #f7f7f7;
+}
+.featured-icon-box {
+  .fa {
+    width: 34px;
+    text-align: center;
+  }
+}
+
+.contactus-banner {
+  background: url("/assets/img/banner/banner_new.webp") no-repeat bottom
+    center/100%;
+  @media screen and (max-width: 991px) {
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+// .hexagon {
+//   width: 100px;
+//   height: 100px;
+//   background-color: #3498db;
+//   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+// }
+
+.hb-contact-tile {
+  transition: transform 0.5s ease-in-out;
+  &:hover {
+    transform: translateY(-10px);
+    .hexagon {
+      background-color: #f79903;
+
+      &::before {
+        border-bottom: 29px solid #f79903;
+      }
+      &::after {
+        border-top: 29px solid #f79903;
+      }
+      i {
+        transform: rotateY(180deg);
+        transition: transform 0.9s;
+      }
+    }
+  }
+}
+.hexagon {
+  width: 100px;
+  height: 58px;
+  background-color: #2c7da0;
+  position: relative;
+  top: -50px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 35px;
+}
+
+.hexagon::before,
+.hexagon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-radius: 2px;
+}
+
+.hexagon::before {
+  bottom: 100%;
+  border-bottom: 29px solid #2c7da0;
+  //   margin-top: -1px;
+}
+
+.hexagon::after {
+  top: 100%;
+  border-top: 29px solid #2c7da0;
+}
+
+.hb-contact-tile-wrapper {
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+}
+.hb-contact-form {
+  input,
+  textarea {
+    outline: none;
+    &:focus {
+      box-shadow: 0 0 2px 1px rgba(43, 125, 160, 0.3);
+    }
+  }
+}

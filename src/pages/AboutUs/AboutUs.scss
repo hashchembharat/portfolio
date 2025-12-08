@@ -1,0 +1,25 @@
+.aboutus-banner {
+  background: url("./../../assets/img/aboutus/banner.jpeg") no-repeat bottom
+    center/100%;
+  @media screen and (max-width: 500px) {
+    background-position: center;
+    background-size: cover;
+  }
+}
+.hb-aboutus-section-1 {
+  // background: url("./../../assets/img/aboutus/banner/section-1.jpeg") no-repeat center
+  //     center/cover;
+}
+.hb-aboutus-section-3 {
+  // background: url("./../../assets/img/aboutus/banner/section-3.jpeg") no-repeat center
+  //     center/cover;
+}
+
+.owl-stage {
+  display: flex;
+  flex-direction: row; /* Or row, depending on your layout */
+  align-items: stretch;
+}
+.owl-carousel .owl-item {
+  display: flex;
+}

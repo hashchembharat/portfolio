@@ -1,0 +1,42 @@
+.hb-gap-4 {
+  gap: 4px;
+}
+.hb-m-t--35 {
+  margin-top: -35px;
+}
+.hb-p-b--35 {
+  padding-bottom: 35px;
+}
+.card-title-band {
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 1rem;
+    height: 0.8px;
+    background-color: #F79903;
+    top: calc(50% - 1px);
+    position: absolute;
+  }
+  &::before {
+    left: -1rem;
+  }
+  &::after {
+    right: -1rem;
+  }
+}
+.product-stock {
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+  background-color: #f44336;
+  // image path is public path
+  background-image: url("./../../../../public/assets/img/icons/nostock.svg");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  &.available {
+    background-color: #4caf50;
+    background-image: url("./../../../../public/assets/img/icons/stock.svg");
+  }
+}

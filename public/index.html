@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HASHEM BHARAT</title>
+    <script>
+        // Route restore helper
+        // When the SPA's index.html is loaded at root, this script will check
+        // sessionStorage for a previously stored path. If found, it will
+        // replace the current history entry to the saved path so the app
+        // bootstraps on that route.
+        (function () {
+            try {
+                var restoreKey = '__hb_last_path__';
+                var saved = sessionStorage.getItem(restoreKey);
+                if (saved && saved !== '/' && window.location.pathname === '/') {
+                    // Replace the current URL with the saved path without reloading
+                    // so the client router can take over.
+                    history.replaceState({}, '', saved + window.location.hash);
+                    // Clear saved value to avoid loops
+                    sessionStorage.removeItem(restoreKey);
+                }
+            } catch (e) {
+                // ignore any storage/privacy errors
+                console.warn('Route restore error', e);
+            }
+        })();
+    </script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>

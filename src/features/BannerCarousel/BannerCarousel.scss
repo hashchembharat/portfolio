@@ -1,0 +1,123 @@
+.home-carousel {
+  position: relative;
+  color: white;
+  .owl-item {
+    padding-top: 125px;
+    padding-bottom: 50px;
+    min-height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    &:nth-of-type(3) {
+      background-image: url("/assets/img/banner/banner_new_5.webp");
+    }
+    &:nth-of-type(4) {
+      background-image: url("/assets/img/banner/banner_new_2.webp");
+    }
+    &:nth-of-type(5) {
+      background-image: url("/assets/img/banner/banner_new_1.webp");
+    }
+    &:nth-of-type(6) {
+      background-image: url("/assets/img/banner/banner_new_3.webp");
+    }
+    @media (max-width: 768px) {
+      height: 65vh;
+    }
+    @media (max-width: 600px) {
+      height: 75vh;
+      background-position: right center;
+    }
+
+    h3 {
+      font-size: 2.1rem;
+      font-weight: 600;
+      transform: translateY(-20px);
+      padding-bottom: 5px;
+      @media (max-width: 768px) {
+        font-size: 2.5rem;
+      }
+    }
+    p {
+      font-size: 1.1rem;
+      font-weight: 300;
+      transform: translateY(-60px);
+      opacity: 0;
+      @media (max-width: 768px) {
+        font-size: 1.3rem;
+      }
+    }
+    @media (max-width: 768px) {
+      .carousel-caption {
+        display: block !important;
+      }
+      h3 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        transform: translateY(-20px);
+      }
+      p {
+        font-size: 1.1rem;
+        transform: translateY(-60px);
+        opacity: 0;
+      }
+    }
+    @media (max-width: 400px) {
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        transform: translateY(-20px);
+      }
+    }
+    &.active {
+      h3 {
+        transform: translateY(0);
+        transition: all linear 100ms;
+      }
+      p {
+        transform: translateY(0);
+        transition: all linear 250ms;
+        opacity: 1;
+      }
+    }
+  }
+  .owl-dots {
+    position: relative;
+    top: -47px;
+    .owl-dot {
+      span {
+        background-color: transparent;
+        border: 1px solid #f79a06;
+        width: 15px;
+        height: 15px;
+        &:hover {
+          background-color: #f79a06;
+        }
+      }
+      &.active {
+        span {
+          background-color: #f79a06;
+          border-color: #ab6a02;
+          outline: 1px solid #f79a06;
+          outline-offset: 2px;
+        }
+      }
+    }
+  }
+}
+.hb-btn-bg-transition {
+  transition: background-color 2s linear;
+}
+
+@media (max-width: 768px) {
+  .banner-text-box {
+    border-radius: 8px;
+    padding: 20px;
+    background: rgba(0, 59, 76, 0.4);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    color: white;
+    @media screen and (max-width: 768px) {
+      flex: none;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.social-navbar {
+  background: #59a4b0 0% 0% no-repeat padding-box;
+  position: relative;
+  overflow: hidden;
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+    background-color: #2d7da0;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  > div {
+    z-index: 2;
+    position: relative;
+  }
+}

@@ -1,0 +1,38 @@
+.services-banner {
+  background: url("/assets/img/banner/banner_new_4.webp") no-repeat bottom
+    center/100%;
+  background-size: cover;
+  @media screen and (max-width: 500px) {
+    background-position: center;
+  }
+}
+
+.featured-icon-box {
+  .fa {
+    width: 34px;
+    text-align: center;
+  }
+}
+
+.card-lift--hover {
+  h6 {
+    font-weight: 700;
+  }
+  .description {
+    font-weight: 500;
+  }
+}
+
+.wrap-text {
+  float: right;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.wrap-text-left {
+  float: left;
+  margin-right: 14px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border-radius: 10px;
+}
