@@ -138,6 +138,16 @@ export const ProductDetails: React.FC = () => {
                 {/* Details Section */}
                 <div className="flex-2 xs:order-2">
                   <div className="text-gray-700 hb-details grid grid-cols-1 gap-x-8 gap-y-4">
+                    {selectedProduct?.chemicalName && (
+                    <div className="grid grid-cols-[auto_1fr] items-start gap-x-2 gap-y-1">
+                      <span className="font-semibold whitespace-nowrap">
+                        Chemical Name:
+                      </span>
+                      <span className="text-secondary font-semibold break-words">
+                        {selectedProduct?.chemicalName}
+                      </span>
+                    </div>
+                    )}
                     <div className="grid grid-cols-[auto_1fr] items-start gap-x-2 gap-y-1">
                       <span className="font-semibold whitespace-nowrap">
                         CAS Number:

@@ -2,6 +2,7 @@
   {
     "Sno": 1,
     "impurityName": "N-Nitroso desloratadine ",
+    "chemicalName": "8-Chloro-11-(1-nitrosopiperidin-4-ylidene)-6,11-dihydro-5H-benzo[5,6]cyclohepta[1,2-b]pyridine",
     "casNo": "1246819-22-6",
     "readyStock": "Yes",
     "parentAPI": "Des Loratadine",
@@ -749,6 +750,7 @@
   {
     "Sno": 37,
     "impurityName": "Desloratadine related compound A",
+    "chemicalName": "8-Bromo-6,11-dihydro-11-(piperidin-4-ylidene)-5H-benzo[5,6]cyclohepta[1,2-b]pyridine",
     "casNo": "117796-50-6",
     "readyStock": null,
     "parentAPI": "Desloratadine",
@@ -901,6 +903,7 @@
   {
     "Sno": 44,
     "impurityName": "N-Acetyl Adenine",
+    "chemicalName": "1-(6-Amino-9H-purin-9-yl)ethan-1-one",
     "casNo": "6743-09-5",
     "readyStock": null,
     "parentAPI": "Pemetrexed",
@@ -945,6 +948,7 @@
   {
     "Sno": 46,
     "impurityName": "Dicresulene (90%)",
+    "chemicalName": "2-hydroxy-5-[(4-hydroxy-2-methyl-5-sulfophenyl)methyl]-4-methylbenzenesulfonic acid",
     "casNo": "78480-14-5",
     "readyStock": null,
     "parentAPI": "Policresulen",
@@ -1200,6 +1204,7 @@
   {
     "Sno": 58,
     "impurityName": "Ciclopirox EP impurity-C",
+    "chemicalName": "6-cyclohexyl-4-methylpyridin-2(1H)-one",
     "casNo": "67587-24-0",
     "readyStock": null,
     "parentAPI": "Ciclopirox",
@@ -1221,6 +1226,7 @@
   {
     "Sno": 59,
     "impurityName": "Mirtazapine Impurity C",
+    "chemicalName": "(14bRS)-2-methyl-3,4,10,14b-tetrahydropyrazino[2,1-a]pyrido[2,3-c][2]benzazepin-1(2H)-one",
     "casNo": "191546-96-0",
     "readyStock": null,
     "parentAPI": "Mirtazapine",

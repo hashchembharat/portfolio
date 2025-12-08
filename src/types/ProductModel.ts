@@ -1,6 +1,7 @@
 export interface ProductModel {
   Sno: number;
   impurityName: string;
+  chemicalName: string | null;
   casNo: string;
   readyStock: string | null;
   parentAPI: string;
